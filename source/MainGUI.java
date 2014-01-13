@@ -56,6 +56,7 @@ public class MainGUI extends javax.swing.JFrame {
         statsLabel = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         statsDialogCloseButton = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         arrestTab = new javax.swing.JPanel();
         vehicleLabel = new javax.swing.JLabel();
@@ -143,8 +144,6 @@ public class MainGUI extends javax.swing.JFrame {
         jSeparator5 = new javax.swing.JSeparator();
         jLabel4 = new javax.swing.JLabel();
         playeridSpinner = new javax.swing.JSpinner();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
         calculateButton = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -156,6 +155,8 @@ public class MainGUI extends javax.swing.JFrame {
         assaultdeadlyLEO = new javax.swing.JRadioButton();
         resetButton = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
         ticketTab = new javax.swing.JPanel();
         impoundTab = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -266,21 +267,25 @@ public class MainGUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LVPD Tool v2");
+        setAutoRequestFocus(false);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setIconImage(Toolkit.getDefaultToolkit().getImage(MainGUI.class.getResource("resources/images/Logo32.png")));
-        setMinimumSize(new java.awt.Dimension(940, 920));
         setName("mainFrame"); // NOI18N
-        setResizable(false);
 
+        jScrollPane2.setPreferredSize(new java.awt.Dimension(900, 920));
+
+        jTabbedPane1.setAutoscrolls(true);
         jTabbedPane1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTabbedPane1.setName(""); // NOI18N
         jTabbedPane1.setPreferredSize(new java.awt.Dimension(900, 920));
+        jTabbedPane1.setBounds(0, 0, dim.width, dim.height);
         jTabbedPane1.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jTabbedPane1StateChanged(evt);
             }
         });
 
+        arrestTab.setAutoscrolls(true);
         arrestTab.setPreferredSize(new java.awt.Dimension(854, 890));
 
         vehicleLabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -528,8 +533,6 @@ public class MainGUI extends javax.swing.JFrame {
 
         jLabel4.setText("<html><b>Select the playerid here");
 
-        jScrollPane1.setViewportView(jTextPane1);
-
         calculateButton.setText("<html><b><font color = \"blue\">Calculate");
         calculateButton.setActionCommand("Calculate");
         calculateButton.addActionListener(new java.awt.event.ActionListener() {
@@ -577,6 +580,8 @@ public class MainGUI extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+
+        jScrollPane1.setViewportView(jTextPane1);
 
         javax.swing.GroupLayout arrestTabLayout = new javax.swing.GroupLayout(arrestTab);
         arrestTab.setLayout(arrestTabLayout);
@@ -638,7 +643,6 @@ public class MainGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel6)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addGroup(arrestTabLayout.createSequentialGroup()
@@ -649,15 +653,19 @@ public class MainGUI extends javax.swing.JFrame {
                                             .addComponent(jLabel7)
                                             .addGap(18, 18, 18)
                                             .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, arrestTabLayout.createSequentialGroup()
                                                     .addComponent(copytoclipboardButton)
                                                     .addGap(15, 15, 15))
-                                                .addComponent(jButton2)))
+                                                .addGroup(arrestTabLayout.createSequentialGroup()
+                                                    .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(jButton2))
+                                                    .addGap(5, 5, 5))))
                                         .addGroup(arrestTabLayout.createSequentialGroup()
                                             .addComponent(calculateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                            .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(arrestTabLayout.createSequentialGroup()
                         .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -732,15 +740,15 @@ public class MainGUI extends javax.swing.JFrame {
                             .addComponent(jCheckBox39)
                             .addComponent(jCheckBox40)
                             .addComponent(jCheckBox41)
+                            .addComponent(jCheckBox42)
                             .addGroup(arrestTabLayout.createSequentialGroup()
                                 .addGap(21, 21, 21)
                                 .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(dischargeComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(firearmsTraffick)
                                     .addComponent(drugsTraffick)
-                                    .addComponent(materialsTraffick)
-                                    .addComponent(dischargeComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jCheckBox42))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                                    .addComponent(materialsTraffick))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 192, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         arrestTabLayout.setVerticalGroup(
@@ -939,10 +947,10 @@ public class MainGUI extends javax.swing.JFrame {
                         .addGap(35, 35, 35)
                         .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
                         .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(arrestTabLayout.createSequentialGroup()
+                                .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(2, 2, 2)
                                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel7))
@@ -951,7 +959,7 @@ public class MainGUI extends javax.swing.JFrame {
                         .addComponent(copytoclipboardButton)
                         .addGap(18, 18, 18)
                         .addComponent(jButton2)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(87, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Arrest Calculator", arrestTab);
@@ -960,11 +968,11 @@ public class MainGUI extends javax.swing.JFrame {
         ticketTab.setLayout(ticketTabLayout);
         ticketTabLayout.setHorizontalGroup(
             ticketTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGap(0, 1036, Short.MAX_VALUE)
         );
         ticketTabLayout.setVerticalGroup(
             ticketTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 861, Short.MAX_VALUE)
+            .addGap(0, 891, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Ticket Calculator", ticketTab);
@@ -973,11 +981,11 @@ public class MainGUI extends javax.swing.JFrame {
         impoundTab.setLayout(impoundTabLayout);
         impoundTabLayout.setHorizontalGroup(
             impoundTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGap(0, 1036, Short.MAX_VALUE)
         );
         impoundTabLayout.setVerticalGroup(
             impoundTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 861, Short.MAX_VALUE)
+            .addGap(0, 891, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Impound Calculator", impoundTab);
@@ -986,11 +994,11 @@ public class MainGUI extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGap(0, 1036, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 861, Short.MAX_VALUE)
+            .addGap(0, 891, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Dispatch Organizer", jPanel2);
@@ -999,11 +1007,11 @@ public class MainGUI extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGap(0, 1036, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 861, Short.MAX_VALUE)
+            .addGap(0, 891, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Stats", jPanel3);
@@ -1012,29 +1020,30 @@ public class MainGUI extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGap(0, 1036, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 861, Short.MAX_VALUE)
+            .addGap(0, 891, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Options", jPanel4);
+
+        jScrollPane2.setViewportView(jTabbedPane1);
+        jTabbedPane1.getAccessibleContext().setAccessibleDescription("");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 960, Short.MAX_VALUE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1060, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 920, Short.MAX_VALUE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 890, Short.MAX_VALUE)
         );
 
-        jTabbedPane1.getAccessibleContext().setAccessibleDescription("");
-
-        setSize(new java.awt.Dimension(976, 928));
+        setSize(new java.awt.Dimension(1076, 928));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     
@@ -1236,6 +1245,7 @@ public class MainGUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
