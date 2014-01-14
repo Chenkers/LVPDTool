@@ -101,5 +101,6 @@ public class VariableReset {
         MainGUI.drugsTextField.setText("0");
         MainGUI.jLabel5.setText("<html><b>Fine:</b> $0<br><br><b>Time: </b>0 minutes<br><br><b>Strikes: </b>0");
         MainGUI.jTextPane1.setText("");
+        MainGUI.offenderName.setText("");
     }
 }
