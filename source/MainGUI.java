@@ -157,6 +157,8 @@ public class MainGUI extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
+        offenderName = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
         ticketTab = new javax.swing.JPanel();
         impoundTab = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -207,9 +209,7 @@ public class MainGUI extends javax.swing.JFrame {
 
         jDialog2.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         jDialog2.setTitle("Stats");
-        jDialog2.setMaximumSize(new java.awt.Dimension(240, 240));
         jDialog2.setMinimumSize(new java.awt.Dimension(240, 240));
-        jDialog2.setPreferredSize(new java.awt.Dimension(240, 240));
         jDialog2.setResizable(false);
         jDialog2.setLocation(dim.width/2-jDialog2.getSize().width/2, dim.height/2-jDialog2.getSize().height/2);
 
@@ -583,6 +583,8 @@ public class MainGUI extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(jTextPane1);
 
+        jLabel8.setText("<html><b>Criminal Name (No underscore): ");
+
         javax.swing.GroupLayout arrestTabLayout = new javax.swing.GroupLayout(arrestTab);
         arrestTab.setLayout(arrestTabLayout);
         arrestTabLayout.setHorizontalGroup(
@@ -644,28 +646,34 @@ public class MainGUI extends javax.swing.JFrame {
                                 .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel6)
                                     .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addGroup(arrestTabLayout.createSequentialGroup()
-                                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(playeridSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, arrestTabLayout.createSequentialGroup()
-                                            .addComponent(jLabel7)
-                                            .addGap(18, 18, 18)
-                                            .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, arrestTabLayout.createSequentialGroup()
-                                                    .addComponent(copytoclipboardButton)
-                                                    .addGap(15, 15, 15))
-                                                .addGroup(arrestTabLayout.createSequentialGroup()
-                                                    .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(jButton2))
-                                                    .addGap(5, 5, 5))))
-                                        .addGroup(arrestTabLayout.createSequentialGroup()
-                                            .addComponent(calculateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(arrestTabLayout.createSequentialGroup()
+                                        .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, arrestTabLayout.createSequentialGroup()
+                                                .addComponent(jLabel7)
+                                                .addGap(18, 18, 18)
+                                                .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, arrestTabLayout.createSequentialGroup()
+                                                        .addComponent(copytoclipboardButton)
+                                                        .addGap(15, 15, 15))
+                                                    .addGroup(arrestTabLayout.createSequentialGroup()
+                                                        .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(jButton2))
+                                                        .addGap(5, 5, 5))))
+                                            .addGroup(arrestTabLayout.createSequentialGroup()
+                                                .addComponent(calculateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(arrestTabLayout.createSequentialGroup()
+                                                .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(14, 14, 14)))
+                                        .addGap(16, 16, 16)
+                                        .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(playeridSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(offenderName, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(arrestTabLayout.createSequentialGroup()
                         .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -940,7 +948,11 @@ public class MainGUI extends javax.swing.JFrame {
                         .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(playeridSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(40, 40, 40)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(offenderName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(12, 12, 12)
                         .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(calculateButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(resetButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1090,21 +1102,38 @@ public class MainGUI extends javax.swing.JFrame {
     //"Create Criminal Report" button
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         URL format = null;
-        URL newThread = null;
+        URL criminalThread = null;
         try { 
             format = new URL("http://www.mt-gaming.com/index.php?threads/new-criminal-report-format.45345/");
         }
         catch(MalformedURLException e){
         }
         try {
-            newThread = new URL("http://mt-gaming.com/index.php?forums/criminal-database.246/");
+            String name = offenderName.getText();
+            int idx = 0;
+            int count = 0;
+            
+            for(int i = 0, n = name.length(); i < n; i++) {
+                if(name.charAt(i) == ' ') {
+                    idx = i;
+                    count++;
+                }
+                if(count == 1){
+                    break;
+                }
+            }
+            
+            StringBuilder search = new StringBuilder(name);
+            search.setCharAt(idx, '+');
+            
+            criminalThread = new URL("http://mt-gaming.com/index.php/search/search?keywords="+search+"&title_only=1&nodes[]=246");
         }
         catch(MalformedURLException e) {
         }
        
         try { 
             java.awt.Desktop.getDesktop().browse(format.toURI());
-            java.awt.Desktop.getDesktop().browse(newThread.toURI());
+            java.awt.Desktop.getDesktop().browse(criminalThread.toURI());
         }
         catch (IOException | URISyntaxException e){
         }
@@ -1240,6 +1269,7 @@ public class MainGUI extends javax.swing.JFrame {
     public static javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -1258,6 +1288,7 @@ public class MainGUI extends javax.swing.JFrame {
     private javax.swing.JLabel lightLabel;
     public static javax.swing.JTextField materialsTextField;
     public static javax.swing.JRadioButton materialsTraffick;
+    private javax.swing.JTextField offenderName;
     public static javax.swing.JSpinner playeridSpinner;
     public static javax.swing.JButton resetButton;
     private javax.swing.JButton statsDialogCloseButton;
