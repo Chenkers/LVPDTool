@@ -1288,7 +1288,7 @@ public class MainGUI extends javax.swing.JFrame {
     private javax.swing.JLabel lightLabel;
     public static javax.swing.JTextField materialsTextField;
     public static javax.swing.JRadioButton materialsTraffick;
-    private javax.swing.JTextField offenderName;
+    public static javax.swing.JTextField offenderName;
     public static javax.swing.JSpinner playeridSpinner;
     public static javax.swing.JButton resetButton;
     private javax.swing.JButton statsDialogCloseButton;

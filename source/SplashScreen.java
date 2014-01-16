@@ -18,6 +18,12 @@
 
 package lvpd.tool;
 
+import java.io.IOException;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JWindow;
@@ -40,8 +46,9 @@ public class SplashScreen {
         java.awt.Dimension dim = java.awt.Toolkit.getDefaultToolkit().getScreenSize(); 
         window.setLocation(dim.width/2-window.getSize().width/2, dim.height/2-window.getSize().height/2);
         
+        setupAudio();
         window.setVisible(true);
-        
+    
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
@@ -50,5 +57,17 @@ public class SplashScreen {
         
         window.setVisible(false);
         window.dispose();
+    }
+    
+    private static void setupAudio() {
+        try { 
+            Clip clip = AudioSystem.getClip();
+            
+            AudioInputStream audioInput = AudioSystem.getAudioInputStream(SplashScreen.class.getResourceAsStream("\\resources\\sounds\\SplashAudio.wav"));
+            clip.open(audioInput);
+            clip.start();
+        }
+        catch(LineUnavailableException | UnsupportedAudioFileException | IOException ex) {
+        }
     }
 }
