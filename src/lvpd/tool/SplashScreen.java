@@ -63,7 +63,7 @@ public class SplashScreen {
         try { 
             Clip clip = AudioSystem.getClip();
             
-            AudioInputStream audioInput = AudioSystem.getAudioInputStream(SplashScreen.class.getResourceAsStream("\\resources\\sounds\\SplashAudio.wav"));
+            AudioInputStream audioInput = AudioSystem.getAudioInputStream(SplashScreen.class.getResource("resources/sounds/SplashAudio.wav"));
             clip.open(audioInput);
             clip.start();
         }
