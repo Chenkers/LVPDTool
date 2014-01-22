@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 Chenko@MTG
+ * Copyright (C) 2014 Chenko
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -81,7 +81,6 @@ public class MainGUI extends javax.swing.JFrame {
         jCheckBox16 = new javax.swing.JCheckBox();
         jCheckBox17 = new javax.swing.JCheckBox();
         jCheckBox18 = new javax.swing.JCheckBox();
-        jCheckBox19 = new javax.swing.JCheckBox();
         jCheckBox20 = new javax.swing.JCheckBox();
         jCheckBox21 = new javax.swing.JCheckBox();
         jCheckBox22 = new javax.swing.JCheckBox();
@@ -106,7 +105,6 @@ public class MainGUI extends javax.swing.JFrame {
         materialsTraffick = new javax.swing.JRadioButton();
         firearmsTraffick = new javax.swing.JRadioButton();
         drugsTraffick = new javax.swing.JRadioButton();
-        jCheckBox36 = new javax.swing.JCheckBox();
         jCheckBox37 = new javax.swing.JCheckBox();
         jCheckBox38 = new javax.swing.JCheckBox();
         dischargeComboBox = new javax.swing.JComboBox();
@@ -125,7 +123,6 @@ public class MainGUI extends javax.swing.JFrame {
         assaultandbatteryLEO = new javax.swing.JRadioButton();
         jCheckBox47 = new javax.swing.JCheckBox();
         jCheckBox48 = new javax.swing.JCheckBox();
-        jCheckBox49 = new javax.swing.JCheckBox();
         jCheckBox50 = new javax.swing.JCheckBox();
         jCheckBox51 = new javax.swing.JCheckBox();
         jCheckBox52 = new javax.swing.JCheckBox();
@@ -354,9 +351,6 @@ public class MainGUI extends javax.swing.JFrame {
         jCheckBox18.setText("Failure to Provide ID");
         jCheckBox18.setToolTipText(CrimesSource.getCrimeTooltip(jCheckBox18.getText()));
 
-        jCheckBox19.setText("Failure to Comply");
-        jCheckBox19.setToolTipText(CrimesSource.getCrimeTooltip(jCheckBox19.getText()));
-
         jCheckBox20.setText("Resisting Arrest");
         jCheckBox20.setToolTipText(CrimesSource.getCrimeTooltip(jCheckBox20.getText()));
 
@@ -404,7 +398,7 @@ public class MainGUI extends javax.swing.JFrame {
         jCheckBox31.setText("Obstruction of Justice");
         jCheckBox31.setToolTipText(CrimesSource.getCrimeTooltip(jCheckBox31.getText()));
 
-        jCheckBox32.setText("Conspiracy to Commit Murder, Rape, etc");
+        jCheckBox32.setText("Conspiracy to Commit Murder");
         jCheckBox32.setToolTipText(CrimesSource.getCrimeTooltip(jCheckBox32.getText()));
 
         jCheckBox33.setText("Aiding and Abetting");
@@ -424,9 +418,6 @@ public class MainGUI extends javax.swing.JFrame {
 
         drugsTraffick.setText("Narcotics");
         drugsTraffick.setToolTipText("<html><b>Trafficking Illegal Narcotics </b><br>Fine: $5000<br>Time: 15 minutes<br>Strikes: 0 </html>");
-
-        jCheckBox36.setText("Prostitution");
-        jCheckBox36.setToolTipText(CrimesSource.getCrimeTooltip(jCheckBox36.getText()));
 
         jCheckBox37.setText("Harassment");
         jCheckBox37.setToolTipText(CrimesSource.getCrimeTooltip(jCheckBox37.getText()));
@@ -479,9 +470,6 @@ public class MainGUI extends javax.swing.JFrame {
 
         jCheckBox48.setText("Armed Robbery");
         jCheckBox48.setToolTipText(CrimesSource.getCrimeTooltip(jCheckBox48.getText()));
-
-        jCheckBox49.setText("Rape or Sexual Assault");
-        jCheckBox49.setToolTipText(CrimesSource.getCrimeTooltip(jCheckBox49.getText()));
 
         jCheckBox50.setText("Illegal Gambling");
         jCheckBox50.setToolTipText(CrimesSource.getCrimeTooltip(jCheckBox50.getText()));
@@ -605,7 +593,6 @@ public class MainGUI extends javax.swing.JFrame {
                                     .addComponent(jCheckBox46)
                                     .addComponent(jCheckBox47)
                                     .addComponent(jCheckBox48)
-                                    .addComponent(jCheckBox49)
                                     .addComponent(jCheckBox50)
                                     .addComponent(jCheckBox51)
                                     .addGroup(arrestTabLayout.createSequentialGroup()
@@ -709,7 +696,6 @@ public class MainGUI extends javax.swing.JFrame {
                             .addComponent(jCheckBox16)
                             .addComponent(jCheckBox17)
                             .addComponent(jCheckBox18)
-                            .addComponent(jCheckBox19)
                             .addComponent(jCheckBox20)
                             .addComponent(jCheckBox21)
                             .addComponent(jCheckBox22))
@@ -739,24 +725,28 @@ public class MainGUI extends javax.swing.JFrame {
                             .addComponent(jCheckBox32))
                         .addGap(20, 20, 20)
                         .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox33)
-                            .addComponent(jCheckBox34)
-                            .addComponent(jCheckBox35)
-                            .addComponent(jCheckBox36)
-                            .addComponent(jCheckBox37)
-                            .addComponent(jCheckBox38)
-                            .addComponent(jCheckBox39)
-                            .addComponent(jCheckBox40)
-                            .addComponent(jCheckBox41)
-                            .addComponent(jCheckBox42)
+                            .addGroup(arrestTabLayout.createSequentialGroup()
+                                .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jCheckBox33)
+                                    .addComponent(jCheckBox34)
+                                    .addComponent(jCheckBox35)
+                                    .addComponent(jCheckBox37)
+                                    .addComponent(jCheckBox38)
+                                    .addComponent(jCheckBox39)
+                                    .addComponent(jCheckBox40)
+                                    .addComponent(jCheckBox41)
+                                    .addComponent(jCheckBox42)
+                                    .addGroup(arrestTabLayout.createSequentialGroup()
+                                        .addGap(21, 21, 21)
+                                        .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(firearmsTraffick)
+                                            .addComponent(drugsTraffick)
+                                            .addComponent(materialsTraffick))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 230, Short.MAX_VALUE))
                             .addGroup(arrestTabLayout.createSequentialGroup()
                                 .addGap(21, 21, 21)
-                                .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(dischargeComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(firearmsTraffick)
-                                    .addComponent(drugsTraffick)
-                                    .addComponent(materialsTraffick))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 192, Short.MAX_VALUE)))
+                                .addComponent(dischargeComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
         );
         arrestTabLayout.setVerticalGroup(
@@ -776,8 +766,6 @@ public class MainGUI extends javax.swing.JFrame {
                         .addComponent(firearmsTraffick)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(drugsTraffick)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jCheckBox36)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jCheckBox37)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -868,8 +856,6 @@ public class MainGUI extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jCheckBox18)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jCheckBox19)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jCheckBox20)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jCheckBox21)
@@ -899,50 +885,47 @@ public class MainGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jCheckBox62))
                             .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(arrestTabLayout.createSequentialGroup()
-                                .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(arrestTabLayout.createSequentialGroup()
-                                        .addComponent(heavyLabel)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jCheckBox43)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(attemptedLEO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jCheckBox44)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jCheckBox45)
-                                        .addGap(6, 6, 6)
-                                        .addComponent(jCheckBox46)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(kidnappingLEO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jCheckBox47, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jCheckBox48)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jCheckBox49)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jCheckBox50))
-                                    .addGroup(arrestTabLayout.createSequentialGroup()
-                                        .addComponent(jCheckBox52)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(assaultLEO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(3, 3, 3)
-                                        .addComponent(jCheckBox53)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(assaultandbatteryLEO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jCheckBox54)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(assaultdeadlyLEO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jCheckBox55)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jCheckBox56)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jCheckBox57)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jCheckBox51))))
+                            .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(arrestTabLayout.createSequentialGroup()
+                                    .addComponent(heavyLabel)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jCheckBox43)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(attemptedLEO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jCheckBox44)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jCheckBox45)
+                                    .addGap(6, 6, 6)
+                                    .addComponent(jCheckBox46)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(kidnappingLEO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jCheckBox47, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jCheckBox48)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jCheckBox50)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jCheckBox51))
+                                .addGroup(arrestTabLayout.createSequentialGroup()
+                                    .addComponent(jCheckBox52)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(assaultLEO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(3, 3, 3)
+                                    .addComponent(jCheckBox53)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(assaultandbatteryLEO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jCheckBox54)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(assaultdeadlyLEO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jCheckBox55)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jCheckBox56)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jCheckBox57)))))
                     .addGroup(arrestTabLayout.createSequentialGroup()
                         .addGap(15, 15, 15)
                         .addGroup(arrestTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1208,7 +1191,6 @@ public class MainGUI extends javax.swing.JFrame {
     public static javax.swing.JCheckBox jCheckBox16;
     public static javax.swing.JCheckBox jCheckBox17;
     public static javax.swing.JCheckBox jCheckBox18;
-    public static javax.swing.JCheckBox jCheckBox19;
     public static javax.swing.JCheckBox jCheckBox2;
     public static javax.swing.JCheckBox jCheckBox20;
     public static javax.swing.JCheckBox jCheckBox21;
@@ -1227,7 +1209,6 @@ public class MainGUI extends javax.swing.JFrame {
     public static javax.swing.JCheckBox jCheckBox33;
     public static javax.swing.JCheckBox jCheckBox34;
     public static javax.swing.JCheckBox jCheckBox35;
-    public static javax.swing.JCheckBox jCheckBox36;
     public static javax.swing.JCheckBox jCheckBox37;
     public static javax.swing.JCheckBox jCheckBox38;
     public static javax.swing.JCheckBox jCheckBox39;
@@ -1241,7 +1222,6 @@ public class MainGUI extends javax.swing.JFrame {
     public static javax.swing.JCheckBox jCheckBox46;
     public static javax.swing.JCheckBox jCheckBox47;
     public static javax.swing.JCheckBox jCheckBox48;
-    public static javax.swing.JCheckBox jCheckBox49;
     public static javax.swing.JCheckBox jCheckBox5;
     public static javax.swing.JCheckBox jCheckBox50;
     public static javax.swing.JCheckBox jCheckBox51;

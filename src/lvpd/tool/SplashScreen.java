@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 Chenko@MTG
+ * Copyright (C) 2014 Chenko
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -22,6 +22,7 @@ import java.io.IOException;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.sound.sampled.FloatControl;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.ImageIcon;
@@ -64,7 +65,10 @@ public class SplashScreen {
             Clip clip = AudioSystem.getClip();
             
             AudioInputStream audioInput = AudioSystem.getAudioInputStream(SplashScreen.class.getResource("resources/sounds/SplashAudio.wav"));
+           
             clip.open(audioInput);
+            FloatControl gainControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+            gainControl.setValue(-30.0f);
             clip.start();
         }
         catch(LineUnavailableException | UnsupportedAudioFileException | IOException ex) {

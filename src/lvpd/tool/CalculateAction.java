@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 Chenko@MTG
+ * Copyright (C) 2014 Chenko
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -174,14 +174,6 @@ public class CalculateAction {
 
                  if(TotalStrikes < CrimesSource.getCrimeStrikesByName(MainGUI.jCheckBox18.getText())) {
                      TotalStrikes = CrimesSource.getCrimeStrikesByName(MainGUI.jCheckBox18.getText());
-                 }
-             }
-             if(MainGUI.jCheckBox19.isSelected()) {
-                 TotalTime += CrimesSource.getCrimeTimeByName(MainGUI.jCheckBox19.getText());
-                 TotalFine += CrimesSource.getCrimeFineByName(MainGUI.jCheckBox19.getText());
-
-                 if(TotalStrikes < CrimesSource.getCrimeStrikesByName(MainGUI.jCheckBox19.getText())) {
-                     TotalStrikes = CrimesSource.getCrimeStrikesByName(MainGUI.jCheckBox19.getText());
                  }
              }
              if(MainGUI.jCheckBox20.isSelected()) {
@@ -433,15 +425,7 @@ public class CalculateAction {
                      TotalTime += 20;
                      TotalFine += 5000;
                  }
-             }
-             if(MainGUI.jCheckBox36.isSelected()) {
-                 TotalTime += CrimesSource.getCrimeTimeByName(MainGUI.jCheckBox36.getText());
-                 TotalFine += CrimesSource.getCrimeFineByName(MainGUI.jCheckBox36.getText());
-
-                 if(TotalStrikes < CrimesSource.getCrimeStrikesByName(MainGUI.jCheckBox36.getText())) {
-                     TotalStrikes = CrimesSource.getCrimeStrikesByName(MainGUI.jCheckBox36.getText());
-                 }
-             }
+             }            
              if(MainGUI.jCheckBox37.isSelected()) {
                  TotalTime += CrimesSource.getCrimeTimeByName(MainGUI.jCheckBox37.getText());
                  TotalFine += CrimesSource.getCrimeFineByName(MainGUI.jCheckBox37.getText());
@@ -543,15 +527,7 @@ public class CalculateAction {
                  if(TotalStrikes < CrimesSource.getCrimeStrikesByName(MainGUI.jCheckBox48.getText())) {
                      TotalStrikes = CrimesSource.getCrimeStrikesByName(MainGUI.jCheckBox48.getText());
                  }
-             }
-             if(MainGUI.jCheckBox49.isSelected()) {
-                 TotalTime += CrimesSource.getCrimeTimeByName(MainGUI.jCheckBox49.getText());
-                 TotalFine += CrimesSource.getCrimeFineByName(MainGUI.jCheckBox49.getText());
-
-                 if(TotalStrikes < CrimesSource.getCrimeStrikesByName(MainGUI.jCheckBox49.getText())) {
-                     TotalStrikes = CrimesSource.getCrimeStrikesByName(MainGUI.jCheckBox49.getText());
-                 }
-             }
+             }       
              if(MainGUI.jCheckBox50.isSelected()) {
                  TotalTime += CrimesSource.getCrimeTimeByName(MainGUI.jCheckBox50.getText());
                  TotalFine += CrimesSource.getCrimeFineByName(MainGUI.jCheckBox50.getText());

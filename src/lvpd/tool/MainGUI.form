@@ -265,7 +265,6 @@
                                               <Component id="jCheckBox46" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Component id="jCheckBox47" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Component id="jCheckBox48" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jCheckBox49" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Component id="jCheckBox50" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Component id="jCheckBox51" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Group type="102" attributes="0">
@@ -397,7 +396,6 @@
                                       <Component id="jCheckBox16" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jCheckBox17" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jCheckBox18" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jCheckBox19" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jCheckBox20" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jCheckBox21" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jCheckBox22" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -432,27 +430,34 @@
                                   </Group>
                                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jCheckBox33" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jCheckBox34" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jCheckBox35" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jCheckBox36" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jCheckBox37" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jCheckBox38" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jCheckBox39" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jCheckBox40" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jCheckBox41" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jCheckBox42" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="dischargeComboBox" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="firearmsTraffick" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="drugsTraffick" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="materialsTraffick" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox33" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox34" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox35" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox37" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox38" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox39" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox40" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox41" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox42" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="firearmsTraffick" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="drugsTraffick" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="materialsTraffick" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
                                           </Group>
+                                          <EmptySpace pref="230" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
+                                          <Component id="dischargeComboBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="192" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -476,8 +481,6 @@
                                   <Component id="firearmsTraffick" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="drugsTraffick" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox36" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="jCheckBox37" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -575,8 +578,6 @@
                                               </Group>
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jCheckBox19" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="jCheckBox20" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="jCheckBox21" min="-2" max="-2" attributes="0"/>
@@ -611,53 +612,49 @@
                                           <Component id="jCheckBox62" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="jSeparator5" alignment="0" min="-2" pref="371" max="-2" attributes="0"/>
-                                      <Group type="102" attributes="0">
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <Component id="heavyLabel" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="jCheckBox43" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="attemptedLEO" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="jCheckBox44" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="jCheckBox45" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                                  <Component id="jCheckBox46" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="kidnappingLEO" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="jCheckBox47" min="-2" pref="23" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="jCheckBox48" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="jCheckBox49" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="jCheckBox50" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" attributes="0">
-                                                  <Component id="jCheckBox52" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="assaultLEO" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                                                  <Component id="jCheckBox53" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="assaultandbatteryLEO" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="jCheckBox54" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="assaultdeadlyLEO" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="jCheckBox55" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="jCheckBox56" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="jCheckBox57" min="-2" max="-2" attributes="0"/>
-                                              </Group>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="heavyLabel" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox43" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="attemptedLEO" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox44" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox45" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox46" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="kidnappingLEO" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox47" min="-2" pref="23" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox48" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox50" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox51" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jCheckBox51" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jCheckBox52" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="assaultLEO" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox53" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="assaultandbatteryLEO" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox54" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="assaultdeadlyLEO" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox55" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox56" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jCheckBox57" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                   </Group>
                               </Group>
@@ -932,17 +929,6 @@
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JCheckBox" name="jCheckBox19">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Failure to Comply"/>
-                    <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                      <Connection code="CrimesSource.getCrimeTooltip(jCheckBox19.getText())" type="code"/>
-                    </Property>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
-                  </AuxValues>
-                </Component>
                 <Component class="javax.swing.JCheckBox" name="jCheckBox20">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Resisting Arrest"/>
@@ -1131,7 +1117,7 @@
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="jCheckBox32">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Conspiracy to Commit Murder, Rape, etc"/>
+                    <Property name="text" type="java.lang.String" value="Conspiracy to Commit Murder"/>
                     <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                       <Connection code="CrimesSource.getCrimeTooltip(jCheckBox32.getText())" type="code"/>
                     </Property>
@@ -1195,17 +1181,6 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Narcotics"/>
                     <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;Trafficking Illegal Narcotics &lt;/b&gt;&lt;br&gt;Fine: $5000&lt;br&gt;Time: 15 minutes&lt;br&gt;Strikes: 0 &lt;/html&gt;"/>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
-                  </AuxValues>
-                </Component>
-                <Component class="javax.swing.JCheckBox" name="jCheckBox36">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Prostitution"/>
-                    <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                      <Connection code="CrimesSource.getCrimeTooltip(jCheckBox36.getText())" type="code"/>
-                    </Property>
                   </Properties>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
@@ -1387,17 +1362,6 @@
                     <Property name="text" type="java.lang.String" value="Armed Robbery"/>
                     <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                       <Connection code="CrimesSource.getCrimeTooltip(jCheckBox48.getText())" type="code"/>
-                    </Property>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
-                  </AuxValues>
-                </Component>
-                <Component class="javax.swing.JCheckBox" name="jCheckBox49">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Rape or Sexual Assault"/>
-                    <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                      <Connection code="CrimesSource.getCrimeTooltip(jCheckBox49.getText())" type="code"/>
                     </Property>
                   </Properties>
                   <AuxValues>

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 Chenko@MTG
+ * Copyright (C) 2014 Chenko
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -52,7 +52,6 @@ public class CrimesSource {
         {"Affray", "Light", "1000", "10", "0"},
         {"Misuse of 911", "Light", "150", "0", "0"},
         {"Failure to Provide ID", "Light", "750", "10", "0"},
-        {"Failure to Comply", "Light", "300", "8", "0"},
         {"Resisting Arrest", "Light", "300", "8", "0"},
         {"Evading Arrest", "Light", "400", "10", "0"},
         {"Disorderly Conduct", "Light", "750", "5", "0"},
@@ -62,10 +61,9 @@ public class CrimesSource {
         {"DUI", "Medium", "2000", "10", "2"},
         {"Impersonating a LEO", "Medium", "3000", "10", "0"},
         {"Obstruction of Justice", "Medium", "1750", "10", "0"},
-        {"Conspiracy to Commit Murder, Rape, etc", "Medium", "3500", "10", "0"},
+        {"Conspiracy to Commit Murder", "Medium", "3500", "10", "0"},
         {"Aiding and Abetting", "Medium", "400", "8", "0"},
         {"Hit and Run", "Medium", "1250", "16", "3"},
-        {"Prostitution", "Medium", "2000", "7", "0"},
         {"Harassment", "Medium", "1500", "7", "0"},
         {"Public Endangerment", "Medium", "1000", "10", "0"},
         {"Fraud", "Medium", "2000", "8", "0"},
@@ -75,7 +73,6 @@ public class CrimesSource {
         {"Racketeering", "Heavy", "25000", "50", "0"},
         {"Robbery", "Heavy", "3000", "15", "0"},
         {"Armed Robbery", "Heavy", "5000", "30", "0"},
-        {"Rape or Sexual Assault", "Heavy", "7500", "15", "0"},
         {"Illegal Gambling", "Heavy", "20000", "20", "0"},
         {"Bribery", "Heavy", "1000", "10", "0"},
         {"Extortion", "Heavy", "2500", "7", "0"},

@@ -43,7 +43,6 @@ public class VariableReset {
         MainGUI.jCheckBox16.setSelected(false);
         MainGUI.jCheckBox17.setSelected(false);
         MainGUI.jCheckBox18.setSelected(false);
-        MainGUI.jCheckBox19.setSelected(false);
         MainGUI.jCheckBox20.setSelected(false);
         MainGUI.jCheckBox21.setSelected(false);
         MainGUI.jCheckBox22.setSelected(false);
@@ -60,7 +59,6 @@ public class VariableReset {
         MainGUI.jCheckBox33.setSelected(false);
         MainGUI.jCheckBox34.setSelected(false);
         MainGUI.jCheckBox35.setSelected(false);
-        MainGUI.jCheckBox36.setSelected(false);
         MainGUI.jCheckBox37.setSelected(false);
         MainGUI.jCheckBox38.setSelected(false);
         MainGUI.jCheckBox39.setSelected(false);
@@ -73,7 +71,6 @@ public class VariableReset {
         MainGUI.jCheckBox46.setSelected(false);
         MainGUI.jCheckBox47.setSelected(false);
         MainGUI.jCheckBox48.setSelected(false);
-        MainGUI.jCheckBox49.setSelected(false);
         MainGUI.jCheckBox50.setSelected(false);
         MainGUI.jCheckBox51.setSelected(false);
         MainGUI.jCheckBox52.setSelected(false);
