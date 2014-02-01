@@ -42,7 +42,7 @@ public class SplashScreen {
         window.getContentPane().add(
                 new JLabel("", new ImageIcon(imgURL), SwingConstants.CENTER));
         window.setBounds(500, 150, 300, 200);
-        window.setSize(500, 350);
+        window.setSize(500, 400);
         
         java.awt.Dimension dim = java.awt.Toolkit.getDefaultToolkit().getScreenSize(); 
         window.setLocation(dim.width/2-window.getSize().width/2, dim.height/2-window.getSize().height/2);

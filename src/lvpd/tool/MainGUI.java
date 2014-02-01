@@ -22,10 +22,10 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.io.IOException;
-import java.net.MalformedURLException;
+/*import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
-
+*/
 /**
  *
  * @author Sergey
@@ -1042,91 +1042,14 @@ public class MainGUI extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     
-    
-    private void jTabbedPane1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jTabbedPane1StateChanged
-        if(evt.getSource() instanceof javax.swing.JTabbedPane) {
-          javax.swing.JTabbedPane pane = (javax.swing.JTabbedPane) evt.getSource();
-          if(pane.getSelectedIndex() != 0 && pane.getSelectedIndex() != 4) {
-              jDialog1.setEnabled(true);
-              jDialog1.show(true);
-              pane.setSelectedIndex(0);
-          }
-          
-          switch(pane.getSelectedIndex()) {
-              case 4:
-                  statsLabel.setText("<html><b>Arrests:</b> "+LVPDProperties.getStat(LVPDProperties.LIFETIME_ARRESTS)+"<br><b>Time:</b> "+LVPDProperties.getStat(LVPDProperties.LIFETIME_TIME)+" minutes<br><b>Fines:</b> $"+LVPDProperties.getStat(LVPDProperties.LIFETIME_FINES)+"<br><b>Strikes:</b> "+LVPDProperties.getStat(LVPDProperties.LIFETIME_STRIKES));
-                  jDialog2.setEnabled(true);
-                  jDialog2.show(true);
-                  pane.setSelectedIndex(0);
-          }
-       }
-    }//GEN-LAST:event_jTabbedPane1StateChanged
-    
+        
     //"Close" button in the Beta Dialog
     private void betaDialogCloseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_betaDialogCloseButtonActionPerformed
         jDialog1.hide();
     }//GEN-LAST:event_betaDialogCloseButtonActionPerformed
     
-    //"Copy to Clipboard" button
-    private void copytoclipboardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copytoclipboardButtonActionPerformed
-       if("Copy".equals(evt.getActionCommand())) {
-           System.out.println("Hello");
-           StringSelection stringSelection = new StringSelection(CalculateAction.CommandString);
-           Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-           clipboard.setContents(stringSelection, stringSelection);
-       }
-    }//GEN-LAST:event_copytoclipboardButtonActionPerformed
-
-    //"Reset" button
-    private void resetButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetButtonActionPerformed
-        VariableReset.resetVariables();
-    }//GEN-LAST:event_resetButtonActionPerformed
-    
-    //"Create Criminal Report" button
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        URL format = null;
-        URL criminalThread = null;
-        try { 
-            format = new URL("http://www.mt-gaming.com/index.php?threads/new-criminal-report-format.45345/");
-        }
-        catch(MalformedURLException e){
-        }
-        try {
-            String name = offenderName.getText();
-            int idx = 0;
-            int count = 0;
-            
-            for(int i = 0, n = name.length(); i < n; i++) {
-                if(name.charAt(i) == ' ') {
-                    idx = i;
-                    count++;
-                }
-                if(count == 1){
-                    break;
-                }
-            }
-            
-            StringBuilder search = new StringBuilder(name);
-            search.setCharAt(idx, '+');
-            
-            criminalThread = new URL("http://mt-gaming.com/index.php/search/search?keywords="+search+"&title_only=1&nodes[]=246");
-        }
-        catch(MalformedURLException e) {
-        }
-       
-        try { 
-            java.awt.Desktop.getDesktop().browse(format.toURI());
-            java.awt.Desktop.getDesktop().browse(criminalThread.toURI());
-        }
-        catch (IOException | URISyntaxException e){
-        }
-    }//GEN-LAST:event_jButton2ActionPerformed
-    
-    //"Calculate" button. Called to outside class file because of how much code it is
-    private void calculateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateButtonActionPerformed
-        CalculateAction.actionPerformed(evt);
-    }//GEN-LAST:event_calculateButtonActionPerformed
-
+   
+   
     private void statsDialogCloseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statsDialogCloseButtonActionPerformed
         jDialog2.hide();
     }//GEN-LAST:event_statsDialogCloseButtonActionPerformed
@@ -1136,8 +1059,55 @@ public class MainGUI extends javax.swing.JFrame {
         statsLabel.setText("<html><b>Arrests:</b> "+LVPDProperties.getStat(LVPDProperties.LIFETIME_ARRESTS)+"<br><b>Time:</b> "+LVPDProperties.getStat(LVPDProperties.LIFETIME_TIME)+" minutes<br><b>Fines:</b> $"+LVPDProperties.getStat(LVPDProperties.LIFETIME_FINES)+"<br><b>Strikes:</b> "+LVPDProperties.getStat(LVPDProperties.LIFETIME_STRIKES));
     }//GEN-LAST:event_statsDialogResetButtonActionPerformed
 
+    private void jTabbedPane1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jTabbedPane1StateChanged
+        if(evt.getSource() instanceof javax.swing.JTabbedPane) {
+            javax.swing.JTabbedPane pane = (javax.swing.JTabbedPane) evt.getSource();
+            if(pane.getSelectedIndex() != 0 && pane.getSelectedIndex() != 3) {
+                jDialog1.setEnabled(true);
+                jDialog1.show(true);
+                pane.setSelectedIndex(0);
+            }
+
+            switch(pane.getSelectedIndex()) {
+                case 4:
+                statsLabel.setText("<html><b>Arrests:</b> "+LVPDProperties.getStat(LVPDProperties.LIFETIME_ARRESTS)+"<br><b>Time:</b> "+LVPDProperties.getStat(LVPDProperties.LIFETIME_TIME)+" minutes<br><b>Fines:</b> $"+LVPDProperties.getStat(LVPDProperties.LIFETIME_FINES)+"<br><b>Strikes:</b> "+LVPDProperties.getStat(LVPDProperties.LIFETIME_STRIKES));
+                jDialog2.setEnabled(true);
+                jDialog2.show(true);
+                pane.setSelectedIndex(0);
+            }
+        }
+    }//GEN-LAST:event_jTabbedPane1StateChanged
+
+//GEN-FIRST:event_jButton2ActionPerformed
+ 
+//GEN-LAST:event_jButton2ActionPerformed
+
+//GEN-FIRST:event_resetButtonActionPerformed
+ 
+//GEN-LAST:event_resetButtonActionPerformed
     
+    private void resetButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        VariableReset.resetVariables();
+    }
     
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+         CriminalReportForm.ShowCriminalReportForm();
+    }
+    
+    //"Copy to Clipboard" button
+    private void copytoclipboardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copytoclipboardButtonActionPerformed
+        if("Copy".equals(evt.getActionCommand())) {
+            StringSelection stringSelection = new StringSelection(CalculateAction.CommandString);
+            Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+            clipboard.setContents(stringSelection, stringSelection);
+        }
+    }//GEN-LAST:event_copytoclipboardButtonActionPerformed
+
+    //"Calculate" button. Called to outside class file because of how much code it is
+    private void calculateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateButtonActionPerformed
+        CalculateAction.actionPerformed(evt);
+    }//GEN-LAST:event_calculateButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1154,6 +1124,7 @@ public class MainGUI extends javax.swing.JFrame {
         catch (IOException e) {}
         
         SplashScreen.splashInit();
+        CriminalReportForm.initCriminalReportForm();
         
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
